@@ -16,7 +16,8 @@ df.columns = [col.replace("PKR=X_", "") for col in df.columns]
 # Now columns should be "Open", "High", "Low", "Close", "Volume", etc.
 
 print(df.head())
-
+df = df[df["Close"] < 400]
+df = df[df["Close"] > 60]
 
 # Make sure the DataFrame's index is labeled
 df.index.name = "Date"
