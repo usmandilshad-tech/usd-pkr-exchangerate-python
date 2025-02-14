@@ -70,4 +70,5 @@ print(median_daily_change)
 print("\nStandard Deviation of Daily % Change by Day of Week:")
 print(std_daily_change)
 
-
+csv_filename = "usd_to_pkr_final_df.csv"
+df.to_csv(csv_filename)
